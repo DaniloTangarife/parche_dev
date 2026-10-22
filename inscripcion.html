@@ -22,6 +22,97 @@
         </ul>
     </nav>
 
+    <form action="gracias.html" method="get">
+        <fieldset>
+            <legend>Tus datos </legend>
+            <p>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required> <br>
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required> <br>
+                <label for="celular">Número de Celular</label>
+                <input type="tel" id="celular" name="celular" pattern="^3\d{9}$" title="El número debe empezar por 3 y tener un máximo de 10 digitos" maxlength="10"> <br>
+                <label for="ciudad">Ciudad</label>
+                <select id="ciudad" name="ciudad">
+                <option value="">Selecciona tu ciudad o municipio de residencia</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Bello">Bello</option>
+                <option value="Itagüí">Itagüí</option>
+                <option value="Envigado">Envigado</option>
+                <option value="Sabaneta">Sabaneta</option>
+                <option value="La Estrella">La Estrella</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Copacabana">Copacabana</option>
+                <option value="Girardota">Girardota</option>
+                <option value="Barbosa">Barbosa</option>
+                <option value="Otro">Otro</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿En qué momento estás?</legend>
+            <p>
+                <input type="radio" id="momento_empezando" name="momento_actual" value="empezando" required>
+                <label for="momento_empezando">Estoy empezando a programar</label> <br>
+                <input type="radio" id="momento_programo" name="momento_actual" value="no_trabaja" required>
+                <label for="momento_programo">Ya programo, pero no trabajo en tecnología</label> <br>
+                <input type="radio" id="momento_trabajo" name="momento_actual" value="ya_trabaja" required>
+                <label for="momento_programo">Trabajo en tecnología</label> <br>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Qué temas te interesan?</legend>
+            <p>
+                <input type="checkbox" id="elegir" value="desarrollo">
+                <label for="elegir">Desarrollo Web</label> <br>
+                <input type="checkbox" id="elegir" value="datos">
+                <label for="elegir">Datos y SQL</label> <br>
+                <input type="checkbox" id="elegir" value="accesibilidad">
+                <label for="elegir">Accesibilidad</label> <br>
+                <input type="checkbox" id="elegir" value="python">
+                <label for="elegir">Python</label> <br>
+                <input type="checkbox" id="elegir" value="despliegue">
+                <label for="elegir">Despliegue en la nube</label> <br>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agenda</legend>
+            <p>
+                Quiero inscribirme al taller “Tu primer bot con Python” (30 cupos, trae tu computador) <br>
+                <label for="talla">Talla</label>
+                <select id="talla" name="talla">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>  
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Qué esperas aprender en Parche Dev?</legend>
+            <p>
+                <label for="expectativas">¿Qué esperas aprender?</label> <br>
+                <textarea id="expectativas" name="expectativas" maxlength="300" placeholder="Máximo 300 caracteres" required></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="codigo-conducta" name="codigo_conducta" value="aceptado" required>
+            <label for="codigo-conducta"><a href="conducta.html">Acepto el código de conducta del evento</a></label>
+        </p>
+
+        <p>
+            <button type="submit">Reservar mi cupo</button>
+        </p>
+
+    </form>
+
     <footer>
         <p>¿Alguna pregunta? Escríbenos a <a href="mailto:hola@parchedev.example">hola@parchedev.example</a></p>
         <p>Parche Dev 2026 | Medellín, Colombia</p>
