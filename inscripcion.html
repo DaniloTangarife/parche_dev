@@ -31,7 +31,7 @@
                 <label for="correo">Correo Electrónico</label>
                 <input type="email" id="correo" name="correo" required> <br>
                 <label for="celular">Número de Celular</label>
-                <input type="tel" id="celular" name="celular" pattern="^3\d{9}$" title="El número debe empezar por 3 y tener un máximo de 10 digitos" maxlength="10"> <br>
+                <input type="tel" id="celular" name="celular" pattern="^3\d{9}$" title="El número debe empezar por 3 y tener un máximo de 10 digitos" maxlength="10" required> <br>
                 <label for="ciudad">Ciudad</label>
                 <select id="ciudad" name="ciudad">
                 <option value="">Selecciona tu ciudad o municipio de residencia</option>
@@ -58,23 +58,27 @@
                 <input type="radio" id="momento_programo" name="momento_actual" value="no_trabaja" required>
                 <label for="momento_programo">Ya programo, pero no trabajo en tecnología</label> <br>
                 <input type="radio" id="momento_trabajo" name="momento_actual" value="ya_trabaja" required>
-                <label for="momento_programo">Trabajo en tecnología</label> <br>
+                <label for="momento_trabajo">Trabajo en tecnología</label> <br>
             </p>
         </fieldset>
 
         <fieldset>
             <legend>¿Qué temas te interesan?</legend>
             <p>
-                <input type="checkbox" id="elegir" value="desarrollo">
-                <label for="elegir">Desarrollo Web</label> <br>
-                <input type="checkbox" id="elegir" value="datos">
-                <label for="elegir">Datos y SQL</label> <br>
-                <input type="checkbox" id="elegir" value="accesibilidad">
-                <label for="elegir">Accesibilidad</label> <br>
-                <input type="checkbox" id="elegir" value="python">
-                <label for="elegir">Python</label> <br>
-                <input type="checkbox" id="elegir" value="despliegue">
-                <label for="elegir">Despliegue en la nube</label> <br>
+                <input type="checkbox" id="tema-desarrollo" name="temas" value="desarrollo">
+                <label for="tema-desarrollo">Desarrollo Web</label> <br>
+
+                <input type="checkbox" id="tema-datos" name="temas" value="datos">
+                <label for="tema-datos">Datos y SQL</label> <br>
+
+                <input type="checkbox" id="tema-accesibilidad" name="temas" value="accesibilidad">
+                <label for="tema-accesibilidad">Accesibilidad</label> <br>
+
+                <input type="checkbox" id="tema-python" name="temas" value="python">
+                <label for="tema-python">Python</label> <br>
+
+                <input type="checkbox" id="tema-despliegue" name="temas" value="despliegue">
+                <label for="tema-despliegue">Despliegue en la nube</label> <br>
             </p>
         </fieldset>
 
